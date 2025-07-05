@@ -774,7 +774,7 @@ html {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  object-position: top; /* Show top of the photo — adjust to 'center' or 'bottom' if needed */
+  object-position: center; /* Show top of the photo — adjust to 'center' or 'bottom' if needed */
   display: block;
   transition: transform 0.3s ease;
 }
@@ -837,5 +837,29 @@ html {
   .floating-heart {
     display: none;
   }
+}
+@media (max-width: 600px) {
+  .video-thumbnail {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .video-thumbnail video {
+    width: 100%;
+    height: auto;
+  }
+
+  .moment-content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .moment-card {
+    margin-bottom: 1.5rem;
+  }
+
+    .you-photo-card img {
+  height: 300px;
+}
 }
 
